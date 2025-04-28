@@ -1,0 +1,225 @@
+section{ 
+    .starter{
+        h1{
+            font-family: "Cormorant Garamond", serif;
+            font-weight: 500;
+            font-size: 50px ;
+            color: #2d5661 !important;
+            padding-left:200px;
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
+        .card{
+            display: flex;
+            flex-direction: row;
+            border: none !important;
+            img{
+                width: 761px;
+                height: 585px;
+                margin-left: 200px;
+                
+            }
+            .text{
+                padding-top: 42px;
+                width: 390px;
+                margin-left: 150px;
+                font-family: "Cormorant Garamond", serif;
+                font-size: 14px;
+            }
+            .button{
+                width: 173px;
+                height: 173px;
+                border: 1px solid #2d5661 !important;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                margin-top: 70px;
+                a{
+                    text-decoration: none;
+                    color: #2d5661;
+                    font-weight: 600;
+                }
+            }
+            .button:hover{
+                    background-color: #2d5661;
+                    transition: 0.5s;
+                    
+                    
+                    a{
+                        color: white;
+                    }
+            }
+        }
+     }
+}
+.bigImage{
+    margin-top: 200px;
+    background-image: url(https://static.wixstatic.com/media/c837a6_d6434cb6a8cb4db19e7a88673af29fff~mv2.jpg/v1/fill/w_1903,h_679,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_d6434cb6a8cb4db19e7a88673af29fff~mv2.jpg);
+    height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.bigText{
+    height: 200px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    h2{
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 500;
+        font-size: 50px;
+        color: #2d5661;
+
+    }
+}
+.secondCard{
+    display: flex;
+}
+.carousel{
+    margin-top: 120px;
+    width: 773px;
+    height: 389px;
+    margin-left: 100px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: #2d5661;
+}
+.carousel-item{
+    padding:20px 40px;
+    height: 100%;
+    
+    flex-direction: column;
+    gap: 50px !important;
+    padding-top: 81px;
+    p{
+        font-size: 25px;
+        color: #2d5661;
+    }
+}
+.carousel-inner{
+    display: flex;
+    align-items: center;
+    
+    height: 100%;
+    width: 500px !important;
+    margin-left: 135px;
+}
+.element style{
+    border: 2px solid #2d5661;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.carousel-indicators{
+    button{
+        background-color: #2d5661 !important;
+        border: 2px solid #2d5661 !important;
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 50% !important;
+        background: transparent !important;
+    }
+}
+.name1{
+    
+    font-size: 17px !important;
+    text-align: center;
+    // margin-top: 40px;
+    height: 100%;
+    padding-top: 100px;
+}
+.name{
+    
+    font-size: 17px !important;
+    text-align: center;
+    margin-top: 40px;
+}
+@media screen and (max-width: 500px ) {
+    
+    .starter{
+        flex-direction: column !important;
+        h1{
+            padding: 0 !important;
+            text-align: center !important;
+            font-size: 30px !important;
+        }
+        .card{
+            flex-direction: column !important;
+            img{
+                margin-left: 0px !important;
+                width: 100% !important;
+                height: 200px !important;
+            }
+            .text{
+                flex-direction: column !important;
+                margin-left: 0 !important;
+                padding: 42px !important;
+                width: 100% !important;
+                font-weight: 700 !important;
+            }
+            .button{
+                position: absolute;
+                margin-top: 12px !important;
+                margin-left: 110px;
+            }
+        }
+    }
+
+    .bigImage{
+        width: 100%;
+        background-attachment:inherit ;
+        background-size: auto;
+        background-position:center;
+        height: 400px;
+        margin-top: 108px;
+    }
+    .bigText{
+        height: 100px;
+        h2{
+            font-size: 30px;
+            font-weight: 600;
+            
+        }
+    }
+    .secondCard{
+        flex-direction: column;
+        .carousel{
+            height: 274px;
+            width: 100%;
+            margin-top: 0;
+            margin-left: 0;
+        }
+        .carousel-item{
+            text-align: center;
+            width: 90%;
+            margin-bottom: 50px;
+            margin-left: 25px;
+        }
+        .carousel-inner{
+            margin-left: 0;
+            width: 100% !important;
+            p{
+                font-size: 19px;
+            }
+            .name{
+                font-size: 14px !important;
+            }
+            .name1{
+                padding-top: 55px;
+                font-size: 14px !important;
+            }
+        }
+        img{
+            margin-top: 100px;
+            height: 213px;
+        }
+    }
+}

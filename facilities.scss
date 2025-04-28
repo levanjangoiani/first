@@ -1,0 +1,133 @@
+.starter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    height: 460px;
+    h1{
+        font-size: 50px;
+        font-family: "Cormorant Garamond", serif;
+        color: #2D5661;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 14px;
+        width: 700px;
+        color: #2D5661;
+        text-align: center;
+    }
+}
+section  {
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+    .card{
+        border: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        img{
+            margin-left: 200px;
+            width: 761px;
+            height: 695px;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 761px;
+            height: 695px;
+            gap: 20px;
+            h2{
+                color:#2D5661;
+            }
+            
+            p{
+                color: #2D5661;
+                width: 350px;
+            }
+            
+        }
+    }
+}
+.reverse{
+    border: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    flex-direction: row-reverse;
+    img{
+        width: 761px;
+        height: 695px;
+        margin-right: 175px;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 761px;
+        height: 695px;
+        gap: 20px;
+    }
+    h2{
+        color:#2D5661;
+    }
+    
+    p{
+        color: #2D5661;
+        width: 350px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .starter{
+        padding-top: 20px;
+        width: 100%;
+        h1{
+            width: 205px;
+            font-size: 30px !important;
+            text-align: center !important;
+        }
+        p{
+            width: 100%;
+        }
+    }
+    .card{
+        flex-direction: column-reverse !important;
+        img{
+            margin-left: 0 !important;
+            width: 100% !important;
+            height: 250px !important;
+        }
+        .text{
+            height: 277px !important;
+            width: 100% !important;
+            text-align: center;
+            p{
+                width: 280px !important;
+            }
+        }
+    }
+    .reverse{
+        flex-direction: column-reverse !important;
+        img{
+            margin-left: 0 !important;
+            width: 100% !important;
+            height: 250px !important;
+        }
+        .text{
+            height: 277px !important;
+            width: 100% !important;
+            text-align: center;
+            p{
+                width: 280px !important;
+            }
+        }
+    }
+}
+

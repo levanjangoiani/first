@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../html css projects"
+		},
+		{
+			"path": "../fullsite"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "presentation"
+	}
+}
